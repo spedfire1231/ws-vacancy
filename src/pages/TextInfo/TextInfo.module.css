@@ -1,0 +1,125 @@
+/* Mobile-first text info page */
+.textInfo {
+  padding: 0 0.5rem;
+}
+
+.textInfo h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.infoSection {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+}
+
+.infoSection h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contentArea {
+  line-height: 1.6;
+}
+
+.contentArea p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.contentArea h3 {
+  color: #333;
+  margin: 1.5rem 0 0.75rem 0;
+  font-size: 1.1rem;
+}
+
+.contentArea ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.contentArea li {
+  margin-bottom: 0.5rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.note {
+  background: #e3f2fd;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid #2196f3;
+}
+
+.note p {
+  margin: 0;
+  color: #1565c0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Tablet styles */
+@media (min-width: 577px) {
+  .textInfo {
+    padding: 0;
+  }
+  
+  .textInfo h1 {
+    font-size: 1.75rem;
+  }
+  
+  .infoSection {
+    padding: 2rem;
+  }
+  
+  .infoSection h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contentArea h3 {
+    font-size: 1.2rem;
+  }
+  
+  .note {
+    padding: 1.25rem;
+  }
+}
+
+/* Desktop styles - full width */
+@media (min-width: 769px) {
+  .textInfo h1 {
+    font-size: 2rem;
+  }
+  
+  .infoSection {
+    padding: 3rem;
+  }
+  
+  .contentArea {
+    max-width: none;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  .infoSection {
+    padding: 4rem;
+  }
+}
+
+/* Ultra wide - center with max width */
+@media (min-width: 1600px) {
+  .textInfo {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  .infoSection {
+    padding: 5rem;
+  }
+}

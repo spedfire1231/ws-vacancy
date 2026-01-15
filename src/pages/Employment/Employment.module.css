@@ -1,0 +1,265 @@
+/* Mobile-first employment page */
+.employment {
+  padding: 0 0.5rem;
+}
+
+.employment h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.processSteps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.stepNumber {
+  background: #4a90e2;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.stepContent h2 {
+  margin: 0 0 0.25rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.stepContent p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.requiredDocuments {
+  margin: 2rem 0;
+}
+
+.requiredDocuments h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.documentsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.documentCategory {
+  background: #f8f9fa;
+  padding: 1.25rem;
+  border-radius: 12px;
+}
+
+.documentCategory h3 {
+  color: #4a90e2;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.documentCategory ul {
+  list-style: none;
+  padding: 0;
+}
+
+.documentCategory li {
+  padding: 0.3rem 0;
+  padding-left: 1rem;
+  position: relative;
+  color: #555;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.documentCategory li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+.contactInfo {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+}
+
+.contactInfo h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.contactMethods {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactMethod {
+  text-align: center;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.contactMethod h3 {
+  color: #4a90e2;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.contactMethod p {
+  margin: 0.25rem 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.timeline {
+  background: #e8f4fd;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #4a90e2;
+}
+
+.timeline h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.timelineInfo p {
+  margin: 0.75rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Tablet styles */
+@media (min-width: 577px) {
+  .employment {
+    padding: 0;
+  }
+  
+  .employment h1 {
+    font-size: 1.75rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .processSteps {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  
+  .step {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .documentsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .contactMethods {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  
+  .contactMethod {
+    flex: 1;
+  }
+  
+  .timelineInfo p {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .employment h1 {
+    font-size: 2rem;
+  }
+  
+  .processSteps {
+    gap: 2rem;
+  }
+  
+  .step {
+    padding: 1.5rem;
+  }
+  
+  .stepContent h2 {
+    font-size: 1.2rem;
+  }
+  
+  .documentsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .documentCategory {
+    padding: 1.5rem;
+  }
+  
+  .contactInfo {
+    padding: 2rem;
+  }
+  
+  .timeline {
+    padding: 2rem;
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1025px) {
+  .documentsGrid {
+    gap: 2rem;
+  }
+}

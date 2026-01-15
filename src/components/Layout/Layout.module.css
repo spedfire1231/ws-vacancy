@@ -1,0 +1,68 @@
+/* Mobile-first layout */
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f7fa;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Tablet styles - content starts centering */
+@media (min-width: 577px) {
+  .main {
+    padding: 1.5rem;
+  }
+}
+
+/* Desktop styles - full width with optional max-width */
+@media (min-width: 769px) {
+  .main {
+    padding: 2rem 3rem;
+  }
+}
+
+/* Large desktop - even wider padding */
+@media (min-width: 1200px) {
+  .main {
+    padding: 3rem 4rem;
+  }
+}
+
+/* Ultra wide screens - limit max width for readability */
+@media (min-width: 1600px) {
+  .main {
+    padding: 4rem 5rem;
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+}
+
+.footer {
+  background: #1a1a2e;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.875rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Tablet footer */
+@media (min-width: 577px) {
+  .footer {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* Desktop footer */
+@media (min-width: 769px) {
+  .footer {
+    padding: 2.5rem 3rem;
+  }
+}
