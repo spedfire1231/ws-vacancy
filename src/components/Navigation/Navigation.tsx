@@ -1,4 +1,5 @@
-
+// Удаляем строку: import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navigation.module.css';
 
@@ -20,7 +21,6 @@ const Navigation = () => {
           White Sky
         </Link>
         
-        {/* Mobile menu button */}
         <button 
           className={styles.mobileMenuButton} 
           onClick={toggleMenu}
@@ -29,7 +29,6 @@ const Navigation = () => {
           {isMenuOpen ? '✕' : '☰'}
         </button>
         
-        {/* Navigation links */}
         <ul className={`${styles.navList} ${isMenuOpen ? styles.open : ''}`}>
           <li><Link to="/" onClick={closeMenu}>Home</Link></li>
           <li><Link to="/video-info" onClick={closeMenu}>Video Info</Link></li>
