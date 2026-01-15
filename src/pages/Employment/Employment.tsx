@@ -30,7 +30,7 @@ const Employment = () => {
           <div className={styles.stepNumber}>3</div>
           <div className={styles.stepContent}>
             <h2>Interview</h2>
-            <p>Short video call to discuss the role and your experience</p>
+            <p>Short conversation to discuss the role and your experience</p>
           </div>
         </div>
       </div>
