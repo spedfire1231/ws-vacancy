@@ -11,38 +11,38 @@ export const convertKievTimeToCountries = (): CountrySchedule[] => {
   return [
     {
       country: "India",
-      dayShift: "17:30 – 02:30",
-      nightShift: "02:30 – 11:30",
+      dayShift: "5:30 PM – 02:30 AM",
+      nightShift: "02:30 AM – 11:30 AM",
       timezone: "IST (UTC+5:30)"
     },
     {
       country: "Nigeria",
-      dayShift: "13:00 – 22:00", 
-      nightShift: "22:00 – 07:00",
+      dayShift: "1:00 PM – 10:00 PM", 
+      nightShift: "10:00 PM – 5:00 AM",
       timezone: "WAT (UTC+1)"
     },
     {
       country: "Ghana",
-      dayShift: "13:00 – 22:00",
-      nightShift: "22:00 – 07:00", 
+      dayShift: "1:00 PM – 10:00 PM",
+      nightShift: "10:00 PM – 7:00 AM", 
       timezone: "GMT (UTC+0)"
     },
     {
       country: "Kenya",
-      dayShift: "15:00 – 00:00",
-      nightShift: "00:00 – 09:00",
+      dayShift: "3:00 PM – 12:00 AM",
+      nightShift: "12:00 AM – 9:00 AM",
       timezone: "EAT (UTC+3)"
     },
     {
       country: "Colombia",
-      dayShift: "07:00 – 16:00",
-      nightShift: "16:00 – 01:00",
+      dayShift: "07:00 AM – 04:00 PM",
+      nightShift: "04:00 PM – 01:00 AM",
       timezone: "COT (UTC-5)"
     },
     {
       country: "Venezuela", 
-      dayShift: "07:00 – 16:00",
-      nightShift: "16:00 – 01:00",
+      dayShift: "07:00 AM – 04:00 PM",
+      nightShift: "04:00 PM – 01:00 AM",
       timezone: "VET (UTC-4)"
     }
   ];
