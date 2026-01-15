@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styles from './TextInfo.module.css';
 
 const TextInfo = () => {
